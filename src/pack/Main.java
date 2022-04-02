@@ -11,7 +11,7 @@ public class Main {
         System.out.println("Start");
         Path path = Paths.get("file.txt");
         try {
-            Files.write(path, "ПРивет NIO".getBytes("cp1251"));
+            Files.write(path, "Привет NIO".getBytes("cp1251"));
             byte[] bytes = Files.readAllBytes(path);
             System.out.println(new String(bytes, "cp1251"));
         } catch (IOException e) {
